@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+        }
+        .box{
+            background-color: blue;
+            margin: 10px;
+            border: 3px solid black;
+            height: 200px;
+            width: 300px;
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            transition: transform 5s ease;
+        }
+        .box{
+            background-color: cornflowerblue;
+            border: 3px solid black;
+            height: 200px;
+            width: 200px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .box1:hover{
+            transform: translate(125px,125px);
+        }
+        .box2:hover{
+            transform: translateX(125px);
+        }
+        .box3:hover{
+            transform: translateY(125px,125px);
+        }
+        .box4:hover{
+            transform: rotate(90deg);
+        }
+        .box5:hover{
+            transform: skewX(20deg);
+        }
+        .box6:hover{
+            transform: skewY(20deg);
+        }
+        .box7:hover{
+            transform: skewY(20deg,20deg);
+        }
+        .box8:hover{
+            transform: Scale(8);
+        }
+        .box9:hover{
+            transform: Scale(2) rotate(90deg) translateX(100px) ;
+        }
+        .image-wrapper{
+            width: 300px;
+            height: 250px;
+            border: 2px solid red;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner-img{
+            width: 100px;
+            height: 100px;
+            transition: 3s;
+        }
+        .inner-img:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Translate X&Y</div>
+        <div class="box box2">Translate X</div>
+        <div class="box box3">Translate Y</div>
+        <div class="box box4">Rotate</div>
+        <div class="box box5">Rotate</div>
+        <div class="box box6">skewX</div>
+        <div class="box box7">SkewY</div>
+        <div class="box box8">Scale</div>
+        <div class="box box9">Multiple</div>
+    </div>
+    <div class="img-wrapper">
+        <img src="images/crocus.webp"  class="inner-img" alt="images">
+    </div>
+</body>
+</html>

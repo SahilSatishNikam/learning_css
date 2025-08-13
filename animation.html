@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        div{
+            width: 350px;
+            height: 350px;
+            /* background-color: red; */
+            position: relative;
+            animation: myfirstanimation;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes myfirstanimation
+        {
+            /* 0%{background-color: red;left: 0px;top: 0px;}
+              25%{background-color: green;left: 300px;top: 0px;}
+                50%{background-color: blueviolet;left: 300px;top: 300px;}
+                  75%{background-color: black;left: 0px;top: 300px;}
+              100%{background-color: red;left: 0px;top: 0px;} */
+               0%{background-image:url(images/cat.webp);left: 0px;top: 0px;}
+              25%{background-image:url(images/fox.webp);left: 300px;top: 0px;}
+                50%{background-image: url(images/pearl.webp);left: 300px;top: 300px;}
+                  75%{background-image:url(images/squirrel.webp);left: 0px;top: 300px;}
+              100%{background-image:url(images/cat.webp);left: 0px;top: 0px;}
+        }
+    </style>
+</head>
+<body>
+   <div></div> 
+</body>
+</html>
