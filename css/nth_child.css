@@ -1,0 +1,35 @@
+ul
+{
+    width: 200px;
+    padding: 10px;
+    list-style-type: none;
+    font-weight: 900;
+}
+li
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+li:nth-child(odd)
+{
+    background-color: black;
+    color: white;
+}
+li:nth-child(even)
+{
+    background-color: grey;
+    color: black;
+}
+li:first-child
+{
+    background-color: yellowgreen;
+    color: black;
+}
+li:last-child
+{
+    background-color: blueviolet;
+    color: black;
+}
